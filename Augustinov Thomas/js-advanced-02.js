@@ -73,3 +73,18 @@ const myObj = {
 
 //Object.values(dictionary).forEach(console.log)
 //Object.keys(dictionary).forEach(console.log)
+
+const mySet = new Set([1, 2, 3, 4, 5, 6, 6, 7, 6]);
+console.log(mySet)
+console.log(mySet.size)
+console.log(mySet.has(5))
+mySet.forEach(value => console.log(value))
+mySet.add(19)
+console.log(mySet)
+mySet.delete(5)
+for(let entry of mySet.entries()){
+    console.log(entry)
+}
+mySet.keys()
+mySet.clear()
+console.log(mySet)
