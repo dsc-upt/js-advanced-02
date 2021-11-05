@@ -35,5 +35,27 @@ dictionary["cheie"] = showMyName;
 //     console.log(key," - ", dictionary[key]);
 // }
 
-Object.values(dictionary).forEach(console.log);
+//Object.values(dictionary).forEach(console.log);
 // Object.keys(dictionary).forEach(console.log);
+
+
+//   Seturi(in loc de Lista)
+/* multime, nu contin valori duplicate
+nu ne intereseaza ordinea obiectelor
+*/
+
+const mySet = new Set([1, 2, 3, 4, 5, 6, 6, 7, 6, 7, 1, 2]);
+console.log(mySet);
+console.log(mySet.size);
+console.log(mySet.has(5));
+//mySet.forEach(value => console.log(value));
+mySet.add(19);
+//console.log(mySet);
+mySet.delete(5);
+// entries -> lista de key-values
+for (let entry of mySet) {
+    console.log(entry);
+}
+
+mySet.clear();
+console.log(mySet);
