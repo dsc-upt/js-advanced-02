@@ -71,6 +71,25 @@ for (const key in dictionary) {
 Object.values(dictionary).forEach(console.log);
 console.log();
 Object.keys(dictionary).forEach(console.log);
+console.log();
 
+const mySet = new Set([1, 2, 5, 4, 7, 6, 6]);
+console.log(mySet);
+console.log(mySet.size);
+console.log(mySet.has(6));
+mySet.forEach(value => console.log(value));
+mySet.add(10);
+console.log(mySet);
+mySet.delete(6);
+console.log(mySet);
+mySet.keys(); // afiseaza setul
+console.log(mySet);
+mySet.values() // same with mySet.keys()
+console.log(mySet);
+for (let entry of mySet.entries()) {
+    console.log(entry);
+}
+mySet.clear();
+console.log(mySet);
 
 
