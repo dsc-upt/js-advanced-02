@@ -77,6 +77,27 @@ for (const key in dict) {
 Object.values(dict).forEach(console.log)  // -> if you need only the values
 console.log()
 Object.keys(dict).forEach(console.log)  // -> if you need only the keys
+console.log()
+console.log()
+
+
+
+// SETS
+const mySet = new Set([1, 2, 4, 5, 8, 6])
+console.log(mySet)
+console.log(mySet.size)
+console.log(mySet.has(5))
+mySet.forEach(value => console.log(value))
+// add/delete values
+mySet.add(19)
+console.log(mySet)
+mySet.delete(5)
+for (let entry of mySet.entries()) {
+    console.log(entry)
+}
+// empty set
+mySet.clear()
+console.log(mySet)
 
 
 
