@@ -64,4 +64,7 @@ const myObject = {
 
 
 const mySet = new Set([1, 2, 4, 5, 6, 1, 23]);
-console.log(mySet)
+console.log(mySet.size)
+
+
+
