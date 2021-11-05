@@ -51,3 +51,17 @@ const dictionary = {
 console.log(dictionary["my-name"])
 console.log(dictionary.one)
 console.log(dictionary["3"])
+
+for (const item of myArray){}
+for (const key in dictionary){
+    console.log(key, " - ", dictionary[key])
+}
+
+const myObject = {
+    name: "aslfkha",
+    id: "askjdha"
+}
+
+
+const mySet = new Set([1, 2, 4, 5, 6, 1, 23]);
+console.log(mySet)
