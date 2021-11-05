@@ -49,3 +49,35 @@ console.log(myArr.find(value => value % 2 === 0))
 myArr.forEach((value, index) => {
     console.log(value, index)
 });
+
+
+const dictionary = {
+    "ceva cheie mai lunga": "ceva valoare mai lungă",
+    one: 1,
+    two: "2",
+    "my-name": 'Dan',
+    3: [1, 5, 3, 6]
+}
+
+console.log(dictionary)
+console.log(dictionary.one)
+console.log(dictionary["my-name"])
+console.log(dictionary["3"])
+console.log(dictionary[3])
+dictionary[3] = "alt string"
+console.log(dictionary[3])
+dictionary["cheie"] = showMyName;
+console.log(dictionary)
+dictionary.cheie('Dan')
+
+for (const item of myArr){}
+for (const key in dictionary){
+    console.log(key, " - ", dictionary[key])
+}
+const myObj = {
+    name: 'dadasd',
+    id: "basfasd"
+}
+
+// Object.values(dictionary).forEach(console.log)
+// Object.keys(dictionary).forEach(console.log)
