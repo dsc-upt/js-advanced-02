@@ -41,6 +41,36 @@ console.log();
 console.log(myarr.find(value => value % 2 === 0));
 console.log();
 
-console.log(myarr.forEach((value, index) => {
-    console.log(value, index);
-}));
+myarr.forEach((value, index) => {
+    console.log(value, index)
+})
+console.log();
+
+const dictionary = {
+    one : 1,
+    two : "2",
+    "my-name" : "Giulia",
+    3 : [1, 3, 5]
+}
+console.log(dictionary.one);
+console.log(dictionary.two);
+console.log(dictionary["my-name"]);
+console.log(dictionary["3"]); // sau [3]
+console.log();
+console.log(dictionary);
+
+dictionary[3] = "alt string";
+console.log(dictionary[3]);
+dictionary["my-name"] = "ceva";
+console.log(dictionary["my-name"]);
+
+for (const key in dictionary) {
+    console.log(key, dictionary[key])
+}
+
+Object.values(dictionary).forEach(console.log);
+console.log();
+Object.keys(dictionary).forEach(console.log);
+
+
+
