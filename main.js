@@ -71,7 +71,7 @@ console.log(dictionary)
 dictionary.cheie('Dan')
 
 for (const item of myArr){}
-for (const key in dictionary){
+for (const key in dictionary) {
     console.log(key, " - ", dictionary[key])
 }
 const myObj = {
@@ -81,3 +81,17 @@ const myObj = {
 
 // Object.values(dictionary).forEach(console.log)
 // Object.keys(dictionary).forEach(console.log)
+
+const mySet = new Set([1, 2, 4, 5, 6, 6, 7, 6]);
+console.log(mySet)
+console.log(mySet.size)
+console.log(mySet.has(5))
+mySet.forEach(value => console.log(value))
+mySet.add(19)
+console.log(mySet)
+mySet.delete(5)
+for (let entry of mySet.entries()) {
+    console.log(entry)
+}
+mySet.clear()
+console.log(mySet)
